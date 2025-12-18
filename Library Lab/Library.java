@@ -8,9 +8,12 @@ and then checks if the given file exists in the repository.
 If the file exists, the method should read the file by opening it and displaying the text. (read the file)
 Then the user can type new information into the file which overwrites the existing content. (write in the file)
 If the file does not exist, handle the error by informing the user and ask them to enter another file name 
-until a valid file name is provided. */
+until a valid file name is provided. 
+Precondition: Assume user always adds file type at end of file name.
 
-/* Exmaple Ouput Scenario:
+*/
+
+/* Example Ouput Scenario:
 
 Type the file name you want to read: notHere.txt
 The file you are looking for isn't found.
@@ -46,6 +49,5 @@ public static void readBook(File bookName, Scanner scan) throws FileNotFoundExce
     }
     fileScan.close();
 
-
-}
+    }
 }
